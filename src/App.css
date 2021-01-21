@@ -63,10 +63,8 @@ nav .logo-name {
   padding: 5px;
 }
 
-/* button styling */
-
-.create-blog-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* carousel */
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }

@@ -3,6 +3,9 @@ import { Button, Form } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 import { useState } from "react";
+import image1 from "./images/carousel-1.jpg";
+import image2 from "./images/carousel-2.jpg";
+import image3 from "./images/carousel-3.jpg";
 
 export const Home = () => {
   return (
@@ -10,39 +13,33 @@ export const Home = () => {
       <div className="container-fluid">
         <Carousel>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://unsplash.com/photos/s9CC2SKySJM"
-              alt="First slide"
-            />
+            <img className="d-block w-100" src={image1} alt="First slide" />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Publish your passions, your way</h3>
+              <p>Create a unique and beautiful blog. It’s easy and free.</p>
+              <Example />
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
-              alt="Third slide"
-            />
+            <img className="d-block w-100" src={image2} alt="Third slide" />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="../Images/carousel-1.jpg"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>Choose the perfect design</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Create a beautiful blog that fits your style. Choose from a
+                selection of easy-to-use templates – all with flexible layouts
+                and hundreds of background images – or design something new.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={image3} alt="Third slide" />
+
+            <Carousel.Caption>
+              <h3>Hang onto your memories</h3>
+              <p>
+                Save the moments that matter. Blogger lets you safely store
+                thousands of posts, photos, and more with Google for free.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -53,7 +50,6 @@ export const Home = () => {
           + Create Blog
         </Button>
       </div> */}
-      <Example />
     </div>
   );
 };
